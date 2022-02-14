@@ -28,3 +28,10 @@ p{
 #item1,#item2,#submit{
     border-radius: 10px;
 }
+#start,#stop{
+    border-radius: 20px;
+
+}
+#addNum,#clear{
+    border-radius: 10px;
+}
