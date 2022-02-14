@@ -13,9 +13,18 @@ p{
    font-size: 40px;
    width: 180px;
    height: 150px;
+   text-align: center;
 }
 
-.click{
-    margin-top:100px;
+#add,#lower{
+    margin-top:10px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+#result1{
+    border-radius: 10px;
+}
+#item1,#item2,#submit{
+    border-radius: 10px;
 }

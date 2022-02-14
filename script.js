@@ -1,17 +1,28 @@
 
-const result = document.querySelector('#result');
-const btn = document.querySelector('.btn');
-const btn1 = document.querySelector('.btn1');
+const result = document.getElementById('result');
+const lower = document.getElementById('lower');// pakasacnelu btn
+const add = document.getElementById('add'); // avelacnelu btn-a
+const result1 = document.getElementById("result1");
+const  item1 =document.getElementById("item1");
+const  item2 =document.getElementById("item2");
+const  submit =document.getElementById("submit");
+  add.addEventListener("click",()=>{
+        result.value++;
+  });
 
-//       let i = 0;
-//   document.getElementsByClassName(".btn1").value = ++i;
-      
-// result.addEventListener("click",function(){
-//     btn1.value = parseInt(btn1.value)+1;
-// })
+  lower.addEventListener("click",()=>{
+      result.value--;
+});
 
-let i=0; 
-function increment() {           
-    i++;       
-    document.getElementsByClassName('btn1').innerHTML= i;
+function addd(a){
+    return function (b){
+    return a + b ;
+ 
+    }
+  
 }
+
+submit.addEventListener("click",()=>{
+ result1.value = addd(+item1.value )(+item2.value);
+})
+
