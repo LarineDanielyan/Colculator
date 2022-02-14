@@ -1,0 +1,21 @@
+body{
+    background-color: bisque;
+    text-align: center;
+    font-size:50px;
+    grid-template-columns: auto;
+    box-shadow: 2px;
+}
+
+p{
+    margin-top: 100px ;
+}
+#result{
+   font-size: 40px;
+   width: 180px;
+   height: 150px;
+}
+
+.click{
+    margin-top:100px;
+    cursor: pointer;
+}
