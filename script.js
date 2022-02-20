@@ -10,19 +10,33 @@ const  submit =document.getElementById("submit");
 let i = 0;
 
 add.addEventListener("click",()=>{
-        result.value++;
-  });
+    
+    result.value= counter.up();
+})
+ 
 
   lower.addEventListener("click",()=>{
-      result.value--;
+      result.value=counter.down();
+  
 });
 
-function addd(a){
-    return function (b){
-    return a + b ;
- 
+let counter = new Calc();
+
+function Calc(){
+     let count = 0;
+    this.up = function(){
+        console.log("====",Calc.count);
+        return ++count;
     }
-  
+    this.down = function(){
+        return --count
+    }
+}
+
+function addd(a){
+    return function(b){
+       return a+b;
+    }
 }
 
 submit.addEventListener("click",()=>{
